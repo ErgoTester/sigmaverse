@@ -51,7 +51,7 @@ export const AllProjectsPageContent = () => {
     <div>
       <Box pt={{ base: 10 }} pb={{ base: 10 }} display="flex" justifyContent="center">
         <Stack spacing={{ base: 8 }}>
-          <Heading fontSize={{ base: '4xl' }}>Explore the universe of Sigmaverse</Heading>
+          <Heading fontSize={{ base: '4xl' }}>Explore the Sigmaverse</Heading>
 
           <Box display="flex" justifyContent="center">
             <InputGroup w={{ base: '100%', md: '70%' }}>

@@ -49,8 +49,8 @@ export const AllProjectsPageContent = () => {
 
   return (
     <div>
-      <Box pt={{ base: 20 }} pb={{ base: 12 }} display="flex" justifyContent="center">
-        <Stack spacing={{ base: 8 }}>
+      <Box pt={{ base: 10 }} pb={{ base: 12 }} display="flex" justifyContent="center">
+        <Stack spacing={{ base: 6 }}>
           <Heading fontSize={{ base: '4xl' }}>Explore the universe of Sigmaverse</Heading>
 
           <Box display="flex" justifyContent="center">

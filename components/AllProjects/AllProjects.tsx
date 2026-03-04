@@ -54,7 +54,7 @@ export const AllProjectsPageContent = () => {
           <Heading fontSize={{ base: '2xl', md: '4xl' }}>Explore the Sigmaverse</Heading>
 
           <Box display="flex" justifyContent="center">
-            <InputGroup w={{ base: '100%', md: '70%' }}>
+            <InputGroup w={{ base: '100%', md: '85%' }}>
               <InputLeftElement pointerEvents="none" children={<SearchIcon color="gray.300" />} />
               <Input
                 onChange={({ target: { value } }) => onChangeSearch(value)}

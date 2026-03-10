@@ -53,13 +53,13 @@ export default function Footer() {
       <Container as={Stack} maxW={'6xl'} py={4} spacing={4} justify={'center'} align={'center'}>
         <Logo />
         <Stack direction={'row'} spacing={6}>
-          <Link href={'/'}>Home</Link>
-          <Link href={'/all-projects'}>Browse Projects</Link>
+          <Link href="/">Home</Link>
+          <Link href="/all-projects">Browse Projects</Link>
           <Link
-          ref="https://github.com/ergoplatform/sigmaverse/issues/new?template=add-request.md&title=Add%20%7BPROJECT%7D"
-          isExternal
+            href="https://github.com/ergoplatform/sigmaverse/issues/new?template=add-request.md&title=Add%20%7BPROJECT%7D"
+            isExternal
           >
-          Add your dApp
+            Add your dApp
           </Link>
         </Stack>
       </Container>

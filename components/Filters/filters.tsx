@@ -1,34 +1,35 @@
-import React from 'react';
-import { Box, Wrap, WrapItem, Button } from '@chakra-ui/react';
+import React, { useRef } from 'react';
 
-interface FiltersProps {
-  filter: string;
-  categories: string[];
-  setCategory: (category: string) => void;
-}
+export default function Filters({ filter, categories, setCategory }: any) {
+  const ref = useRef<any>();
 
-export default function Filters({ filter, categories, setCategory }: FiltersProps) {
   return (
-    <Box px={{ base: 4, md: 8 }} pb="40px">
-      <Wrap spacing={2} justify="center" py={2}>
-        {categories.map((category) => (
-          <WrapItem key={category}>
-            <Button
-              onClick={() => setCategory(category)}
-              className={filter === category ? 'filter-item__active' : 'filter-item__tag'}
-              variant="ghost"
-              borderRadius="full"
-              px={4}
-              py={1}
-              minW="80px"
-              maxW={{ base: '100%', sm: 'auto' }}
-              whiteSpace="nowrap"
+    <div className="filter">
+      <div className="filter__container">
+        <button
+          className="left_button"
+          onClick={() => {
+            ref.current.scrollLeft -= 120;
+          }}
+        />
+        <div className="filter-item" ref={ref}>
+          {categories.map((e: any) => (
+            <div
+              key={e}
+              className={e == filter ? 'filter-item__active' : 'filter-item__tag'}
+              onClick={() => setCategory(e)}
             >
-              {category}
-            </Button>
-          </WrapItem>
-        ))}
-      </Wrap>
-    </Box>
+              {e}
+            </div>
+          ))}
+        </div>
+        <button
+          className="right_button"
+          onClick={() => {
+            ref.current.scrollLeft += 120;
+          }}
+        />
+      </div>
+    </div>
   );
 }

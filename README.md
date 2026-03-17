@@ -10,4 +10,4 @@ The idea is that developers can create their apps, and then list them on Sigmave
 
 As it becomes the default site for accessing dApps, more and more devs will add their own, making it easy to learn about new additions to the Ergo ecosystem. A search bar allows users to check for a specific type of dApp.
 
-To include your dApp in Sigmaverse, create an issue with you [Project Info](https://github.com/ergoplatform/sigmaverse/issues/new?template=add-request.md&title=Add%20%7BPROJECT%7D)
+To include your dApp in Sigmaverse, create an issue with your [Project Info](https://github.com/ergoplatform/sigmaverse/issues/new?template=add-request.md&title=Add%20%7BPROJECT%7D)

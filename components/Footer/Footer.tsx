@@ -72,7 +72,7 @@ export default function Footer() {
             </SocialButton>
             <SocialButton label={'Github'} href={'https://github.com/ergoplatform/sigmaverse'}>
               <FaGithub />
-            </SocialButton>            
+            </SocialButton>
           </Stack>
         </Container>
       </Box>
